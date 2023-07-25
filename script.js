@@ -1,5 +1,7 @@
 
-
+//pendiente añadir resultado entre 1 y máximo (100,6 ó 3)
+//actualmente está añadido cómo máximo 101 por ejemplo, 
+//pero esa no es la lógica, debe salir aleatoriamente entre dos números y está pendiente
 
 function clickButton() {
     const button100 = document.querySelector(".button1");
@@ -9,21 +11,28 @@ function clickButton() {
     if (button100) {
         
         button100.addEventListener("click", () => {
-            console.log("click1");
             function getRandom100(max) {
-                return Math.floor(Math.random() * max);
+                var result100 = Math.floor(Math.random() * max);
+                var btn100 = document.querySelector(".random_button");
+                btn100.innerHTML = result100;
             }
-            console.log(getRandom100(100));
+            getRandom100(101);
         });
     }
+    
 
     if (button6) {
         button6.addEventListener("click", () => {
             console.log("click2");
             function getRandom6(max) {
-                return Math.floor(Math.random() * max);
+                
+                var result = Math.floor(Math.random() * max);
+                var btn = document.querySelector(".random_button");
+                btn.innerHTML = result;
+           
             }
-            console.log(getRandom6(6));
+          
+            getRandom6(7);
         });
     }
     if (button3) {
@@ -31,16 +40,14 @@ function clickButton() {
         button3.addEventListener("click", () => {
             console.log("click3");
             function getRandom3(max) {
-                return Math.floor(Math.random() * max);
+                var result3 = Math.floor(Math.random() * max);
+                var btn3 = document.querySelector(".random_button");
+                btn3.innerHTML = result3;
             }
-            console.log(getRandom3(3));
+            getRandom3(4);
         });
     }
 
 }
 
 clickButton();
-
-
-
-
