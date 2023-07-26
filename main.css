@@ -17,6 +17,10 @@
     cursor: pointer;
     max-width: 200px;
 }
+.button_dice:hover{
+    background-color: #f3a1a1;
+    
+}
 
 .random_button {
     background-color: rgb(250, 240, 240);
