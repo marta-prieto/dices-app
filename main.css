@@ -19,7 +19,7 @@
 }
 .button_dice:hover{
     background-color: #f3a1a1;
-    
+
 }
 
 .random_button {
@@ -31,7 +31,8 @@
     text-decoration: none;
     font-size: 16px;
     cursor: pointer;
-    width: 200px;
+    width: 150px;
     height: auto;
+    min-height: 20px;
     margin: 20px;
 }
