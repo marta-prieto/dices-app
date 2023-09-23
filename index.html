@@ -7,21 +7,19 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./css/main.css">
     <title>Document</title>
-    <script type="module" defer>
-        import "./components/AppElement.js";
-      </script>
+    <script src="./components/app.js" type="module" defer></script>
 </head>
 
-<body>
+<body class="app js-app">
 <main>
     <section class="section">
         <h3 class="title">Random Dice Result</h3>
         <ul class="button_box">
-            <li><output class="button_dice button1" nr_max="100">100</output></li>
-            <li><output class="button_dice button2" nr_max="6">6</output></li>
-            <li><output class="button_dice button3" nr_max="3">3</output></li>
+            <li><button class="button_dice button100 js-button"><button></li>
+            <li><button class="button_dice button6 js-button"></button></li>
+            <li><button class="button_dice button3 js-button"></button></li>
         </ul>
-        <div class="random_button"></div>
+        <output class="random_button"></output>
 
     </section>
 
