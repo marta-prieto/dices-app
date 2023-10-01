@@ -1,11 +1,10 @@
-import { getRandom } from "./class.js"
+import { Dices } from './dices.js'
 
-function clickButton() {
-    const arrayBtn = document.querySelectorAll(".button_dice")
-    arrayBtn.forEach(btn => {
-        btn.addEventListener("click", () => {
-                getRandom(Number(btn.getAttribute("nr_max")))
-        })
-    })
-}
-clickButton()
+const app = document.querySelector('.js-app')
+const output = app.querySelector('.js-output')
+const buttons = app.querySelectorAll('.js-button')
+
+buttons.forEach(button  => {
+      const activeButton = new Dices (button, output)
+      console.log(activeButton)
+})
